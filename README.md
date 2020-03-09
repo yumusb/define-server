@@ -42,16 +42,7 @@ $url = str_ireplace( 'downloads.wordpress.org', $wsOptions["downserver"], $url )
 
 1. 我们推荐使用Cloudflare的workers自行搭建（白 女票），详情可以参照此仓库 [Workers-Proxy](https://github.com/Siujoeng-Lau/Workers-Proxy/blob/master/README_zh.md)。如果你懒得折腾，也可以使用我的测试服务器（不保证稳定性）
 
-   单纯worker反代
-
-   downloads.wordpress.org=>downloads.wp.302.pub
-
-   api.wordpress.org=>api.wp.302.pub
-
-   worker反代+奇安信CDN（可能速度会有所改善）
-
-   api.wordpress.org=>a.wp.302.pub
-
-   downloads.wordpress.org=>d.wp.302.pub
+   downloads.wordpress.org=>downloads.wordpresscdn.workers.dev  
+   api.wordpress.org=>api.wordpresscdn.workers.dev
 
 2. 当然也可以通过nginx,Apache等组件进行反代服务，不过我觉得这样就违背了本插件出现的意义。（想反代就必须要有可以访问wp的服务器，而我们可以访问还要什么反代 (ノ=Д=)ノ┻━┻。）
