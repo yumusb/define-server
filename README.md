@@ -32,7 +32,7 @@ $url = str_ireplace( 'downloads.wordpress.org', $wsOptions["downserver"], $url )
 
 1. 下载插件
 
-   你可以在[releases](/releases/latest)页面获取最新版本信息,然后下载zip压缩包。
+   你可以在[releases](https://github.com/yumusb/define-server/releases)页面获取最新版本信息,然后下载zip压缩包。
 
 2. 通过 WordPress 后台上传安装，或者直接将源码上传到 WordPress 插件目录`wp-content/plugins`，然后在后台启用。（路径{WP_DIR}/wp-content/plugins/define-server/define-server.php）
 
