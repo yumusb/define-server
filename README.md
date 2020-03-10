@@ -1,4 +1,4 @@
-# DEFINE-SERVER 插件使用说明
+# DEFINE-SERVER
 
 
 
@@ -19,7 +19,7 @@
 
 核心代码如下：
 
-```php
+```
 $url = str_ireplace( 'api.wordpress.org', $wsOptions["apiserver"], $url );
 $url = str_ireplace( 'downloads.wordpress.org', $wsOptions["downserver"], $url );
 ```
@@ -28,13 +28,21 @@ $url = str_ireplace( 'downloads.wordpress.org', $wsOptions["downserver"], $url )
 
 ### 安装
 
-目前还没有上架wordpress仓库，所以需要手动安装。
+你可以选择在wp后台安装，亦或者手动安装
 
-1. 下载插件
++ 后台安装
 
-   你可以在[releases](https://github.com/yumusb/define-server/releases)页面获取最新版本信息,然后下载zip压缩包。
+  wordpress插件页面地址<https://wordpress.org/plugins/DEFINE-SERVER/>，你也可以尝试在后台搜索`DEFINE-SERVER`
 
-2. 通过 WordPress 后台上传安装，或者直接将源码上传到 WordPress 插件目录`wp-content/plugins`，然后在后台启用。（路径{WP_DIR}/wp-content/plugins/define-server/define-server.php）
++ 手动安装
+
+  1. 下载插件
+
+     你可以在github的 [releases](https://github.com/yumusb/define-server/releases)页面获取最新版本信息,然后下载zip压缩包。
+
+  2. 上传并启用
+
+     通过 WordPress 后台上传安装，或者直接将源码上传到 WordPress 插件目录`wp-content/plugins`，然后  在后台启用。（路径{WP_DIR}/wp-content/plugins/define-server/define-server.php）
 
 ### 设置
 
